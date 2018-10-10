@@ -7,7 +7,8 @@ def get_first_name_of_season_winner(data, season)
         end
       end
     end
-    
+  end
+end
   
   season.each do |season_key, info|
     info.each do |info_key, data|
