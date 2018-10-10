@@ -46,12 +46,12 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data_h, season_k)
-arr = []   
-ans = ""   
-   data_h[season_k].each do | season_key, contestant_data |
+  arr = []   
+  ans = ""   
+    data_h[season_k].each do | season_key, contestant_data |
       arr << season_key["age"].to_f
-   end  
-arr_sum = arr.inject(0){|sum,x| sum + x }
+    end  
+  arr_sum = arr.inject(0){|sum,x| sum + x }
 ans = arr_sum / arr.size
 ans = ans.round
 end	
