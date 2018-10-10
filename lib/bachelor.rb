@@ -12,9 +12,9 @@ end
 
 
 def get_contestant_name(data, occupation)
-  data.each do |season_key, contestant_values|
-    contestant_values.each do |occupation|
-      if occupation["occupation"] == occupation
+  data.each do |season, contestant_values|
+    contestant_values.each do |occupation_search|
+      if occupation_search["occupation"] == occupation
         return occupation["name"]
       end
     end
