@@ -1,4 +1,8 @@
 def get_first_name_of_season_winner(data, season)
+  data.each do |season_num, contestant_stats|
+    
+  
+  
   season.each do |season_key, info|
     info.each do |info_key, data|
       if info_key == "status" && data == "Winner"
