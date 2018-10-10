@@ -53,6 +53,9 @@ def get_average_age_for_season(data, season)
       if age_search["age"] == age 
         array << age.to_f 
       end
+        sum = 0
+        array.each { |a| sum+=a }
+      
     end
   end
 end
