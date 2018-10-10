@@ -54,4 +54,4 @@ ans = ""
 arr_sum = arr.inject(0){|sum,x| sum + x }
 ans = arr_sum / arr.size
 ans = ans.round
-end	end
+end	
