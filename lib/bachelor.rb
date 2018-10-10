@@ -9,15 +9,7 @@ def get_first_name_of_season_winner(data, season)
     end
   end
 end
-  
-  season.each do |season_key, info|
-    info.each do |info_key, data|
-      if info_key == "status" && data == "Winner"
-        winner = :name
-      end
-    end
-    winner    
-end
+
 
 def get_contestant_name(data, occupation)
   # code here
