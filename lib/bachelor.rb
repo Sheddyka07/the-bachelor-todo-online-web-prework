@@ -14,7 +14,11 @@ end
 def get_contestant_name(data, occupation)
   data.each do |season_key, contestant_values|
     contestant_values.each do |occupation|
-      if occupation 
+      if occupation["occupation"] =="Cruise Ship Singer"
+        return occupation["name"]
+      end
+    end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
