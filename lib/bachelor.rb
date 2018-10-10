@@ -52,6 +52,6 @@ def get_average_age_for_season(data_h, season_k)
       arr << season_key["age"].to_f
     end  
   arr_sum = arr.inject(0){|sum,x| sum + x }
-ans = arr_sum / arr.size
-ans = ans.round
+  ans = arr_sum / arr.size
+  ans = ans.round
 end	
